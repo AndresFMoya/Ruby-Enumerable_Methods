@@ -25,7 +25,7 @@ Style/Documentation:
 Style/ClassAndModuleChildren:
   Enabled: false
 Style/RedundantSelf:
-	  Enabled: false
+	Enabled: false
 	
 
 Layout/AlignHash:
