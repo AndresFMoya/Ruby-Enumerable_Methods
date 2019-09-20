@@ -49,15 +49,14 @@ module Enumerable
     false
   end
 
-  def my_none?
-    if block_given?
-      my_each { |item| return false if yield(item) }
-    elsif arg.nil?
-      my_each { |item| return false if item }
+  def my_none?(&block)
+    result = true
+    if block
+      my_each { |e| result = false if yield(e) }
     else
-      my_each { |item| return false if item.class == arg }
+      my_each { |e| result = false if e }
     end
-    false
+    result
   end
 
   def my_count
