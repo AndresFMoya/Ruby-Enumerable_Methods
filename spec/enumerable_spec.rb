@@ -86,7 +86,7 @@ RSpec.describe Enumerable do
 
   context 'When the block returns true to any elemend' do
     describe '#my_none?' do
-      it 'should returns true if the block never returns true for all elements' do
+      it 'should returns false if the block never returns true for all elements' do
         ans = arr.my_none? { |number| number == 10 }
         expect(ans).to eql(false)
       end
