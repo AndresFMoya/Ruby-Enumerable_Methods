@@ -13,7 +13,7 @@ This project consists of implement and Test using RSpec one version of Ruby’s 
 7. #my_count
 8. #my_map (Accepting either a proc or a block.)
 9. #my_inject
-10. #my_inject is tested by creating a method called #multiply_els which multiplies all the elements of the array together by using
+10. #my_inject is tested by creating a method called #multiply_els which multiplies all the elements of the array together.
 
 ### Write Tests for Enumerable methods using RSPec
 
