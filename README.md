@@ -1,7 +1,7 @@
 # Enumerable Methods
 This project consists of implement and Test using RSpec one version of Ruby’s enumerable methods. This is the second project of the main `<Ruby>` Curriculum at Microverse.
 
-#### The objective is to add new methods onto the existing Enumerable module. Such methods are as follows
+### The objective is to add new methods onto the existing Enumerable module. Such methods are as follows
 
 1. #my_each, a method that is identical to #each but (obviously) without using #each.
 2. #my_each_with_index in the same way.
@@ -46,6 +46,8 @@ Enumerable
   When the block returns false to any element
     #my_all?
       should returns true if the block never returns false or nil
+
+      Finished in 0.01043 seconds (files took 0.15033 seconds to load) 10 examples, 0 failures
 ```
 
 ## Contributors
