@@ -3,7 +3,7 @@
 require_relative '../enumerable.rb'
 
 RSpec.describe Enumerable do
-  arr = (1..10).to_a
+  let(:arr){(1..10).to_a}
 
   context 'When block is given' do
     describe '#my_each' do
@@ -97,6 +97,15 @@ RSpec.describe Enumerable do
     end
   end
 
+  context 'When no block is given' do
+    describe '#my_any' do
+      it 'should return true if at least one of the collection members is not false or nil' do
+        ans = [].my_any?
+        expect(ans).to eql(false)
+      end
+    end
+  end
+
   context 'When the block returns false to any element' do
     describe '#my_none?' do
       it 'should returns true if the block never returns true for all elements' do
@@ -111,6 +120,15 @@ RSpec.describe Enumerable do
       it 'should returns false if the block never returns true for all elements' do
         ans = arr.my_none? { |number| number == 10 }
         expect(ans).to eql(false)
+      end
+    end
+  end
+
+  context 'When no block is given' do
+    describe '#my_none' do
+      it 'return true only if none of the collection members is true' do
+        ans = [].my_none?
+        expect(ans).to eql(true)
       end
     end
   end
