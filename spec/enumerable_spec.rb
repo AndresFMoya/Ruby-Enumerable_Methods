@@ -3,7 +3,7 @@
 require_relative '../enumerable.rb'
 
 RSpec.describe Enumerable do
-  let(:arr){(1..10).to_a}
+  let(:arr) { (1..10).to_a }
 
   context 'When block is given' do
     describe '#my_each' do
