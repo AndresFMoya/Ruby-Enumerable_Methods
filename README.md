@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/AndresFMoya/Ruby-Enumerable_Methods.svg?branch=master)](https://travis-ci.org/AndresFMoya/Ruby-Enumerable_Methods)
 # Enumerable Methods
 
-This project consists of implement and Test using RSpec one version of Ruby’s enumerable methods. This is the second project of the main `Ruby` Curriculum at Microverse.
+This project consists of implement and Test using RSpec one version of Ruby’s enumerable methods.
 
 ### The objective is to add new methods onto the existing Enumerable module. Such methods are as follows
 
